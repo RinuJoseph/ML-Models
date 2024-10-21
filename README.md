@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 **[GENERATIVE MODELS]{.underline}**
+=======
+**Lecture 9-12 [GENERATIVE MODELS]**
+>>>>>>> 99e07bd167156a3742b0ab0d02fc647f478ebf5a
 
 Generative models learn from the existing datasets and generate new
 instances that are similar to original data. They do this by capturing
@@ -21,7 +25,11 @@ latent variables from this distribution and produces the reconstructed
 data.
 
 <figure>
+<<<<<<< HEAD
 <img src="media/image1.png" style="width:4.40827in;height:1.45767in"
+=======
+<img src="[media/image1.png](https://i.imgur.com/HoC4Ybt.png)" style="width:4.40827in;height:1.45767in"
+>>>>>>> 99e07bd167156a3742b0ab0d02fc647f478ebf5a
 alt="https://miro.medium.com/v2/resize:fit:1500/1*ejNnusxYrn1NRDZf4Kg2lw@2x.png" />
 <figcaption><p>: Difference between autoencoder and variational
 encoder</p></figcaption>
