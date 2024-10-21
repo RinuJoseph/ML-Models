@@ -1,4 +1,4 @@
-GENERATIVE MODELS
+Lecture 13 - GENERATIVE MODELS
 Generative models learn from the existing datasets and generate new instances that are similar to original data. They do this by capturing or learning the probability of the dataset. Once the model has learned distribution it will generate new data points by sampling the learnt probability distribution. 
 Types of Generative Models:
 1.	Variational Auto Encoders (VAEs):
