@@ -21,7 +21,7 @@ latent variables from this distribution and produces the reconstructed
 data.
 
 <figure>
-<img src="media/image1.png" style="width:4.40827in;height:1.45767in"
+<img src="[media/image1.png](https://i.imgur.com/HoC4Ybt.png)" style="width:4.40827in;height:1.45767in"
 alt="https://miro.medium.com/v2/resize:fit:1500/1*ejNnusxYrn1NRDZf4Kg2lw@2x.png" />
 <figcaption><p>: Difference between autoencoder and variational
 encoder</p></figcaption>
