@@ -1,4 +1,4 @@
-**[GENERATIVE MODELS]{.underline}**
+**Lecture 9-12 [GENERATIVE MODELS]**
 
 Generative models learn from the existing datasets and generate new
 instances that are similar to original data. They do this by capturing
