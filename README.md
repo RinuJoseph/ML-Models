@@ -23,10 +23,10 @@ Types of Generative Models:
     the latent space (gaussian distribution) and decoder takes the sampled
     latent variables from this distribution and produces the reconstructed
     data.
-
+![Alt text]([https://example.com/path/to/image.png](https://imgur.com/a/cmYNZD0))
 <figure>
 
-<img src="https://imgur.com/a/cmYNZD0" style="width:4.40827in;height:1.45767in"/>
+
 
 <figcaption><p>: Difference between autoencoder and variational
 encoder</p></figcaption>
