@@ -26,7 +26,7 @@ Types of Generative Models:
 
 <figure>
 
-<img src="media/image1.png" style="width:4.40827in;height:1.45767in"/>
+<img src="https://imgur.com/a/cmYNZD0" style="width:4.40827in;height:1.45767in"/>
 
 <figcaption><p>: Difference between autoencoder and variational
 encoder</p></figcaption>
