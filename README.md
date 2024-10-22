@@ -28,10 +28,7 @@ Types of Generative Models:
 <p> Difference between autoencoder and variational encoder
 
 
-<figure>
-<img src="media/image2.png" style="width:3.90592in;height:0.30421in" />
-<figcaption><p>: VAEs Loss Function</p></figcaption>
-</figure>
+<p>VAEs Loss Function</p>
 
     The loss function (figure 2) contains 2 terms, reconstruction loss (to
     make the output close to the original input) and a regularization term
