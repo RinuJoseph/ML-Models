@@ -24,17 +24,14 @@ Types of Generative Models:
     latent variables from this distribution and produces the reconstructed
     data.
 <p align="center">
-    <img align="center" width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
+    <img align="center" width="318"  alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
     <p align="center">Figure 1: Difference between autoencoder and variational encoder</p>
 </p>
 
-
-
-
-<p>
+<p align="center">
     <img width="248" alt="image" src="https://github.com/user-attachments/assets/db382beb-de33-47ee-87b1-e62ff6f355e2">
-    <p>Figure 2: VAEs Loss Function</p>
-</>
+    <p align="center">Figure 2: VAEs Loss Function</p>
+</p>
     The loss function (figure 2) contains 2 terms, reconstruction loss (to
     make the output close to the original input) and a regularization term
     (to make the learned latent variables to be close to standard normal
@@ -44,11 +41,9 @@ Types of Generative Models:
 
     GANs works on the concept of adversarial learning where two networks in
     the system compete which other. It composes of 2 neural networks
-<img width="238" alt="image" src="https://github.com/user-attachments/assets/f326040a-8f24-43b2-beea-1035370a994e">
-
-    ![Figure 2: Roles of the generator and the discriminator. Source:
-    Stanford CS231n \[2\].](media/image3.png){width="3.2980785214348205in"
-    height="1.225in"}
+    <p align="center">
+        <img width="238" alt="image" src="https://github.com/user-attachments/assets/f326040a-8f24-43b2-beea-1035370a994e">
+    </p>
 
     -   **Generator:** It generates fake images by sampling from an input
         random noise to fool the discriminator.
@@ -56,9 +51,10 @@ Types of Generative Models:
     -   **Discriminator:** It tries to classify the images as real or fake.
         Discriminator is fed with fake images from generator and the real
         images.
-<img width="360" alt="image" src="https://github.com/user-attachments/assets/696a5191-7be4-4b3a-9bb9-9c4a81186080">
-
-    : Objective function of GANs
+        <p align="cenetr">
+            <img width="360" alt="image" src="https://github.com/user-attachments/assets/696a5191-7be4-4b3a-9bb9-9c4a81186080">
+            <p align="center">Figure 3: Objective function of GANs</p>
+        </p>
 
     GANs trained on minmax objective function (figure 3). The goal of the
     discriminator **(D)** is to correctly classify real and generated
@@ -70,7 +66,7 @@ Types of Generative Models:
     GAN models takes some information such as class labels to generate
     desired output.
 
-3.  **Diffusion Models:**
+4.  **Diffusion Models:**
 
     Diffusion Models are generative models, used to generate data similar to
     the data on which they are trained. Diffusion Models work by destroying
@@ -85,21 +81,22 @@ Types of Generative Models:
         of the process x0, x1, x2,..., xT are the noisy samples and the xt
         depends on the previous step xt-1. βt​ is the variance schedule that
         controls amount of noise added at each time step t.
-<img width="338" alt="image" src="https://github.com/user-attachments/assets/1e24ebbc-c664-47b9-a126-0965399c936d">
+        <p align="center">
+            <img width="338" alt="image" src="https://github.com/user-attachments/assets/1e24ebbc-c664-47b9-a126-0965399c936d">
+            <p align="center">Figure 4: The process of adding noise in forward process in 10 steps.</p>
+        </p>
 
-
-    : The process of adding noise in forward process in 10 steps.
-
-    <figure>
-    <img width="229" alt="image" src="https://github.com/user-attachments/assets/e0c30285-0abb-4110-be9d-75f534de75a7">
-
-    <figcaption><p>: Mathematical formulation of forward
-    process.</p></figcaption>
-    </figure>
+    <p aluign="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/e0c30285-0abb-4110-be9d-75f534de75a7">
+        <p>Figure 5: Mathematical formulation of forward process.</p> 
+    </p>
 
     -   The **Reverse** diffusion is supposed to turn that noise into the
         image again. Starting from the noisy data xT​, the model attempts to
         remove the noise in a step-by-step manner to recover the original
         data x0. Figure 6 shows the reverse process of diffusion model.
-<img align="right" width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
-Mathematical formulation of reverse diffusion process.
+        <p align = "center">
+            <img align="right" width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
+            <p align="center"> Figure 6: Mathematical formulation of reverse diffusion process.</p>
+        </p>
+
