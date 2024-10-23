@@ -86,7 +86,7 @@ Types of Generative Models:
             <p align="center">Figure 4: The process of adding noise in forward process in 10 steps.</p>
         </p>
 
-    <p aluign="center">
+    <p align="center">
         <img width="229" alt="image" src="https://github.com/user-attachments/assets/e0c30285-0abb-4110-be9d-75f534de75a7">
         <p>Figure 5: Mathematical formulation of forward process.</p> 
     </p>
@@ -96,7 +96,7 @@ Types of Generative Models:
         remove the noise in a step-by-step manner to recover the original
         data x0. Figure 6 shows the reverse process of diffusion model.
         <p align = "center">
-            <img align="right" width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
+            <img width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
             <p align="center"> Figure 6: Mathematical formulation of reverse diffusion process.</p>
         </p>
 
