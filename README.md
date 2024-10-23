@@ -100,6 +100,5 @@ Types of Generative Models:
         image again. Starting from the noisy data xT​, the model attempts to
         remove the noise in a step-by-step manner to recover the original
         data x0. Figure 6 shows the reverse process of diffusion model.
-<img width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
-
-    : Mathematical formulation of reverse diffusion process.
+<img align="right" width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
+Mathematical formulation of reverse diffusion process.
