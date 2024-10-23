@@ -24,8 +24,8 @@ Types of Generative Models:
     latent variables from this distribution and produces the reconstructed
     data.
 
-<center><img width="318" alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
-<p>Difference between autoencoder and variational encoder</p></center>
+<img align="center" width="318" alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
+<p>Difference between autoencoder and variational encoder</p>
 
 
 
