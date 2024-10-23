@@ -25,7 +25,7 @@ Types of Generative Models:
     data.
 <p align="center">
     <img align="center" width="318" alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
-    <p>Difference between autoencoder and variational encoder</p>
+    <span>Figure 1: Difference between autoencoder and variational encoder</span>
 </p>
 
 
