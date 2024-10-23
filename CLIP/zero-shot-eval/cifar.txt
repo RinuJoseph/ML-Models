@@ -1,0 +1,16 @@
+Top 1 accuracy = 19.54 %
+Top 5 accuracy = 71.84 %
+----------------------------------------------------- 
+Class wise accuracies (in %)
+
+Top-1     Top-5     Class name          
+36.3      91.5      cat                 
+6.7       57.4      ship                
+41.7      85.5      airplane            
+63.6      99.7      frog                
+3.8       66.0      automobile          
+0.0       3.5       truck               
+11.8      84.3      dog                 
+4.4       54.7      horse               
+4.4       78.2      deer                
+22.7      97.6      bird                
