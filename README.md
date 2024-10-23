@@ -24,18 +24,17 @@ Types of Generative Models:
     latent variables from this distribution and produces the reconstructed
     data.
 <p align="center">
-    <img align="center" width="318" alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
+    <img align="center" width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/cd14f4c1-79e9-49c9-b100-c1d629e83780">
     <p align="center">Figure 1: Difference between autoencoder and variational encoder</p>
 </p>
 
 
 
 
-<figure>
-<img width="248" alt="image" src="https://github.com/user-attachments/assets/db382beb-de33-47ee-87b1-e62ff6f355e2">
-
-<figcaption><p>: VAEs Loss Function</p></figcaption>
-</figure>
+<p>
+    <img width="248" alt="image" src="https://github.com/user-attachments/assets/db382beb-de33-47ee-87b1-e62ff6f355e2">
+    <p>Figure 2: VAEs Loss Function</p>
+</>
     The loss function (figure 2) contains 2 terms, reconstruction loss (to
     make the output close to the original input) and a regularization term
     (to make the learned latent variables to be close to standard normal
