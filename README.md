@@ -51,7 +51,7 @@ Types of Generative Models:
     -   **Discriminator:** It tries to classify the images as real or fake.
         Discriminator is fed with fake images from generator and the real
         images.
-        <p align="cenetr">
+        <p align="center">
             <img width="360" alt="image" src="https://github.com/user-attachments/assets/696a5191-7be4-4b3a-9bb9-9c4a81186080">
             <p align="center">Figure 3: Objective function of GANs</p>
         </p>
