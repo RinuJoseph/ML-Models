@@ -30,7 +30,8 @@ Types of Generative Models:
 
 
 <figure>
-<img src="media/image2.png" style="width:3.90592in;height:0.30421in" />
+<img width="248" alt="image" src="https://github.com/user-attachments/assets/db382beb-de33-47ee-87b1-e62ff6f355e2">
+
 <figcaption><p>: VAEs Loss Function</p></figcaption>
 </figure>
     The loss function (figure 2) contains 2 terms, reconstruction loss (to
@@ -42,6 +43,7 @@ Types of Generative Models:
 
     GANs works on the concept of adversarial learning where two networks in
     the system compete which other. It composes of 2 neural networks
+<img width="238" alt="image" src="https://github.com/user-attachments/assets/f326040a-8f24-43b2-beea-1035370a994e">
 
     ![Figure 2: Roles of the generator and the discriminator. Source:
     Stanford CS231n \[2\].](media/image3.png){width="3.2980785214348205in"
@@ -53,6 +55,7 @@ Types of Generative Models:
     -   **Discriminator:** It tries to classify the images as real or fake.
         Discriminator is fed with fake images from generator and the real
         images.
+<img width="360" alt="image" src="https://github.com/user-attachments/assets/696a5191-7be4-4b3a-9bb9-9c4a81186080">
 
     : Objective function of GANs
 
@@ -81,11 +84,14 @@ Types of Generative Models:
         of the process x0, x1, x2,..., xT are the noisy samples and the xt
         depends on the previous step xt-1. βt​ is the variance schedule that
         controls amount of noise added at each time step t.
+<img width="338" alt="image" src="https://github.com/user-attachments/assets/1e24ebbc-c664-47b9-a126-0965399c936d">
+
 
     : The process of adding noise in forward process in 10 steps.
 
     <figure>
-    <img src="media/image6.png" style="width:3.30086in;height:0.37in" />
+    <img width="229" alt="image" src="https://github.com/user-attachments/assets/e0c30285-0abb-4110-be9d-75f534de75a7">
+
     <figcaption><p>: Mathematical formulation of forward
     process.</p></figcaption>
     </figure>
@@ -94,5 +100,6 @@ Types of Generative Models:
         image again. Starting from the noisy data xT​, the model attempts to
         remove the noise in a step-by-step manner to recover the original
         data x0. Figure 6 shows the reverse process of diffusion model.
+<img width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
 
     : Mathematical formulation of reverse diffusion process.
