@@ -1,7 +1,13 @@
 # Machine Learning Models Implementation
 
 In this repository, I will be implementing various machine learning models that I learned from a series of tutorial videos by Berkeley. You can find the complete series here: [Berkeley ML Tutorial Series - Video Link](https://www.youtube.com/watch?v=Q3fqoJ41g6U&list=PLzWRmD0Vi2KVsrCqA4VnztE4t71KnTnP5)
-
+### Lecture 9-12 GENERATIVE MODELS
+1. Generative Models
+2. Transformers
+3. Vision Transformers
+4. Contrastive Learning
+5. NeRF
+   
 ## Lecture 9-12 GENERATIVE MODELS
 
 Generative models learn from the existing datasets and generate new
