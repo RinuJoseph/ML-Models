@@ -122,7 +122,7 @@ Types of Generative Models:
 #### Attention Mechanism
  <p align="center">
         <img width="229" alt="image" src="https://github.com/user-attachments/assets/6bc74125-dfe1-440c-a4cf-8d7688e2d960">
-        <p>Image source: : https://jalammar.github.io/illustrated-transformer</p> 
+        <p align="center">Image source: : https://jalammar.github.io/illustrated-transformer</p> 
 </p>
 
 Attention is a mechanism used in “Transformer” models allows the position in the input to focus its relevance to different parts of the input sequence when processing each word or token. It helps the model understand which other words in the sentence and generate a representation of the input sequence.
@@ -138,10 +138,40 @@ Each element becomes query, key, and value from the input embeddings matrix X by
 
  <p align="center">
         <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/ff8632f7-349d-4419-b3ee-d2ddb8950434">
-        <p>Illustration of Attention mechanism(image source:(https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models)
+        <p align="center">Illustration of Attention mechanism(image source:(https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models)
 </p> 
 </p>
-![image]()
+
+#### Transformer Model Architecture
+ <p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/af98ad84-a5e0-476f-b32a-970b6e052160">
+</p>
+The fundamental building blocks of the Transformer model are the encoder and decoder.
+Both encoder and decoder layers are stacked 6 times in the Transformer model.
+Input sequences are passed to the model as embeddings along with positional encodings.
+Encoder and decoder use multi-head attention and masked multi-head attention.
+The decoder looks at the output of the encoder (and the previously generated words).
+<!-- ![image](https://github.com/user-attachments/assets/af98ad84-a5e0-476f-b32a-970b6e052160) -->
+
+#### Scaled Dot Product Attention
+In the paper, attention mechanism is described as “Scaled Dot Product Attention” and it can be defined as
+
+Input to this method consists of:
+<p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/06e7bd5a-3b3e-497e-94af-690d63ed31cb">
+</p>
+<!-- ![image]() -->
+
+Query (Q) (dimension dk = 64) 
+Key (K) (dimension dk = 64) 
+Value (V) (dimension dv = 64)			
+Dot product of query and key computed and scaled. Scaling is performed by dividing dot product by        which is 8. (the logic behind the scaling: Dot product grows too large in magnitude for large number of dimensions and result in vanishing gradient problems)
+SoftMax is applied to normalize the values between 0 and 1. The result of this step is attention weight matrix.
+The softMax score is multiplied by value matrix.
+
+
+
+
 
 
 
