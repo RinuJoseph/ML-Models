@@ -217,8 +217,11 @@ The softMax score is multiplied by value matrix.
 </li>
    <li>In order to differentiate between different positions in the input sequence, the ‘positional encoding’ uses sine and cosine functions of different frequencies. embeddings at the bottoms of the encoder and decoder stacks. 
       <p align="center">
-        <img width="600" alt="image" height="400px" src="!https://github.com/user-attachments/assets/dbc9e560-ce8f-47c0-b90e-05f5dd2028b1">
+        <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/02761a53-11a3-4d99-bb4c-0fec7af01b5e">
+<!--         <p align="center">Image Source: https://learning.oreilly.com/library/view/build-a-large/9781633437166/OEBPS/Text/chapter-2.html#p248</p> -->
 </p> 
+<!-- ![image]() -->
+
 </li>
    <li>Where pos is position in the sequence and i is the dimension or index of the positional encoding vector. For every even embedding index sine formula is applied and cosine is applied to odd index
 </li>
@@ -226,38 +229,47 @@ The softMax score is multiplied by value matrix.
 
 #### Transfomer Encoder Network
 <p align="center">
-        <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/df60d5d8-f5fb-4e36-b075-5c0eb48c5cd2">
+        <img width="400" alt="image" height="400px" src="https://github.com/user-attachments/assets/df60d5d8-f5fb-4e36-b075-5c0eb48c5cd2">
 <!--         <p align="center">Image Source: https://learning.oreilly.com/library/view/build-a-large/9781633437166/OEBPS/Text/chapter-2.html#p248</p> -->
 </p> 
-![image]()
-The encoder used in this paper is composed of N = 6 identical stacked layers. 
-Each layer is divided into two sub-layers, 
-   1.Multi-Head attention layer
-   2.Feed-Forward network layer. 
-Each encoder is encapsulated by a residual connection which is then followed by layer normalization.
-Residual connections: Adds the input value x to the sub-layer’s output f(x) through a separate path,
-the final output of each sub-layer can be described as 
-LayerNorm(x + f(x)), where f(x) is the function used in the corresponding sub-layer.
-Position-wise Feed-Forward Networks
-![image](https://github.com/user-attachments/assets/577dbe85-c865-4c22-982a-9b08cd7ee934)
 
-This layer is applied independently and parallel to each position of the input sequence.
-This FFN consists of two linear transformations with a ReLU activation function placed in between.
-The first linear transformation projects the vector into a higher dimensional space. In this paper, the input was transformed from dₖ = 512 to 2048.
-ReLU is applied before being put through the second linear transformation, which reduces the matrix back to its original dimensionality.
+-   The encoder used in this paper is composed of **N = 6** identical stacked layers.
+-   Each layer is divided into two sub-layers:
+      1. Multi-Head attention layer
+      2.  Feed-Forward network layer
+-   Each encoder is encapsulated by a **residual connection** which is then followed by layer normalization.
+-   Residual connections: Adds the input value x to the sub-layer’s output f(x) through a separate path.
+-   The final output of each sub-layer can be described as:
+      - **LayerNorm(x + f(x))**, where f(x) is the function used in the corresponding sub-layer.
+
+**Position-wise Feed-Forward Networks**
+![image](https://github.com/user-attachments/assets/2d9df99f-a344-4545-a144-05ad801711ba)
+-   This layer is applied independently and parallel to each position of the input sequence.
+-   This FFN consists of **two linear transformations** with a **ReLU activation function** placed in between.
+-   The first linear transformation projects the vector into a higher dimensional space. In this paper, the input was transformed from **dₖ = 512 to 2048**.
+-   ReLU is applied before being put through the second linear transformation, which reduces the matrix back to its original dimensionality.
+
 
 #### Transformer Decoder Network
 <p align="center">
-        <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/b5b2192f-5e85-4ece-909b-845d88bafedc">
+        <img width="400" alt="image" height="400px" src="https://github.com/user-attachments/assets/b5b2192f-5e85-4ece-909b-845d88bafedc">
 <!--         <p align="center">Image Source: https://learning.oreilly.com/library/view/build-a-large/9781633437166/OEBPS/Text/chapter-2.html#p248</p> -->
 </p> 
 
 
+-   The decoder is comprised of **N = 6** identical layers. 
+-   It has 3 sub-layers
+      1. Masked Multi-Head attention layer
+      2. Multi-Head attention layer
+      3. Feed-forward network layer.
+-   Similar to the encoder, residual connections are employed around each sub-layer in the decoder, followed by layer normalization.
+-   To make sure that the model is auto-regressive, that is, with only previous positions influencing the present position, the first sub-layer is modified with a masking mechanism that prevents each position from attending to future positions (i.e., it only looks at the current and previous tokens)
+-   The output from the final encoder layer is converted to a key and value vector and passed to the decoder.
+**Final Linear and Softmax Layer**
+-   The Linear layer is a simple fully connected neural network that projects the vector produced by the stack of decoders, into a much, much larger vector called a logits vector.
+-   The SoftMax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.
 
 
-
-
-<!-- ![image]() -->
 
 
 
