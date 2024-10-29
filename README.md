@@ -286,6 +286,7 @@ The softMax score is multiplied by value matrix.
 
 
 **Contrastive Language-Image Pre-training (CLIP)**
+
 ![image](https://github.com/user-attachments/assets/3acd7dd0-6f14-43a1-b59b-373410b2e0d5)
 
 -   CLIP model has two main components
@@ -298,6 +299,7 @@ The softMax score is multiplied by value matrix.
 -   The text encoder in CLIP is based on a transformer architecture. It consists of 12 layers, 512 hidden units, and 8 attention heads. It operates on byte pair encoding (BPE)
 
 **Pre-training method**
+
 ![image](https://github.com/user-attachments/assets/da1266ab-e259-4cb9-a304-2641db8fbe39)
 
 ![image](https://github.com/user-attachments/assets/8c06d978-9eb3-49bd-b374-d670e797a74f)
@@ -310,6 +312,7 @@ The softMax score is multiplied by value matrix.
       -   The diagonal of the matrix contains the similarity scores for the correct pairs, while the off-diagonal values represent scores for incorrect pairs.
 
 **Zero-Shot CLIP**
+
 ![image](https://github.com/user-attachments/assets/1d75ca5a-7bbc-4b86-94e1-5f56ab1ce0e1)
 
 -   Zero-shot learning refers to generalizing to unseen object categories.
