@@ -26,3 +26,11 @@ Github: [https://github.com/revantteotia/clip-training]
 
 
 ![image](https://github.com/user-attachments/assets/73fcd252-7912-4f93-8051-9a1b16e4e819)
+
+
+**Inference Results -  Pretrained ViT-L/14 (Used official CLIP github to do inference on 5 images)** 
+
+![image](https://github.com/user-attachments/assets/b4b920e7-c747-4eaf-858a-bd5fada048e2)
+
+![image](https://github.com/user-attachments/assets/c4aabc39-00e5-4313-9aeb-330dc22cf2d6)
+
