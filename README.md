@@ -2,7 +2,7 @@
 
 In this repository, I will be implementing various machine learning models that I learned from a series of tutorial videos by Berkeley. You can find the complete series here: [Berkeley ML Tutorial Series - Video Link](https://www.youtube.com/watch?v=Q3fqoJ41g6U&list=PLzWRmD0Vi2KVsrCqA4VnztE4t71KnTnP5)
 ### Topics
-1. Generative Models
+1. Generative Models (## Lecture 9-12 GENERATIVE MODELS).
 2. Transformers
 3. Vision Transformers
 4. Contrastive Learning
@@ -270,10 +270,63 @@ The softMax score is multiplied by value matrix.
 -   The SoftMax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.
 
 
+## Lecture 22 - CLIP
+
+**Contrastive Learning**
+-   Contrastive learning is a technique in machine learning, focusing on distinguishing between similar and dissimilar data pairs. It trains models to maximize similarity within the same class and minimize it between different classes.
+-   Works well with unlabeled data, making it scalable and useful for pre-training.
+-   The technique involves three types of samples:
+-   Anchor (reference sample),
+-   Positive (similar sample),
+-   Negative (dissimilar sample).
+-   The model brings positive samples closer to the anchor in an embedding space while pushing negative samples away. 
+-   For example in computer vision, an encoder is trained to group positive image embeddings and separate negative ones. Positive samples can be from the same class or an augmented version of the anchor.
+-   Negative samples come from different classes.
+![image](https://github.com/user-attachments/assets/d87e7515-561b-4d7a-946b-7c70a2b401e0)
 
 
+**Contrastive Language-Image Pre-training (CLIP)**
+![image](https://github.com/user-attachments/assets/3acd7dd0-6f14-43a1-b59b-373410b2e0d5)
 
+-   CLIP model has two main components
+-   Image Encoder: For processing the images
+-   Text Encoder: For analyzing the textual descriptions
+-   Uses Contrastive learning to align images and text by comparing pairs. This enables CLIP to create robust, generalizable embeddings that can perform zero-shot classification across a wide range of tasks.
+-   The image encoder in CLIP utilizes two primary architectures to transform images into vector embeddings: 
+-   ResNet-50 a Convolutional Neural Network (CNN), 
+-   Vision Transformer (ViT).
+-   The text encoder in CLIP is based on a transformer architecture. It consists of 12 layers, 512 hidden units, and 8 attention heads. It operates on byte pair encoding (BPE)
 
+**Pre-training method**
+![image](https://github.com/user-attachments/assets/da1266ab-e259-4cb9-a304-2641db8fbe39)
+
+![image](https://github.com/user-attachments/assets/8c06d978-9eb3-49bd-b374-d670e797a74f)
+
+-   Given a batch of N (image, text) pairs, CLIP's goal is to predict which of the N × N possible combinations (image, text pairs) are correct and which are not. CLIP uses multi-modal embedding space by training image and text encoder jointly
+-   Cosine similarity: The model computes the cosine similarity between the embeddings of every image and text pair, aiming to maximize the similarity for the N real image-text pair and minimize it for N2 − N incorrect ones.
+-   Symmetric cross-entropy loss: The loss function is based on the similarity scores, using a symmetric cross-entropy loss to maximize correct pair scores and minimize incorrect pair scores.
+-   Example:
+      -   Consider a batch of 20 image-text pairs. CLIP computes the similarity scores between all possible pairings, which results in a 20 x 20 matrix (400 possible pairings). Of these, only 20 pairs (the correct image-text combinations) are valid.
+      -   The diagonal of the matrix contains the similarity scores for the correct pairs, while the off-diagonal values represent scores for incorrect pairs.
+
+**Zero-Shot CLIP**
+![image](https://github.com/user-attachments/assets/1d75ca5a-7bbc-4b86-94e1-5f56ab1ce0e1)
+
+-   Zero-shot learning refers to generalizing to unseen object categories.
+-   For each of the 1000 possible classes (like “dog” or “cat”), you generate a text embedding using a prompt like "a photo of a {object}". This gives you 1000 text embeddings, each representing a possible class in the dataset.
+-   For example:
+   -   "a photo of a dog"
+   -   "a photo of a cat"
+-   Next, you take the image you want to classify (e.g., a photo of a dog) and generate an image embedding using CLIP.
+-   The image embedding is compared with all 1000 text embeddings by computing the dot product between the image embedding and each of the text embeddings. The dot product will give a measure of similarity between the image and each possible class description.
+-   The class whose text embedding has the highest dot product (i.e., the highest similarity) with the image embedding is predicted as the label.
+-   For example, if the image is of a dog, the text embedding for "a photo of a cat" will have the highest similarity, and the model will predict the image is a cat.
+
+**Limitations**
+-   CLIP's zero-shot performance is still far from the state-of-the-art for most tasks. An estimated 1000x increase in compute would be required to make CLIP's zero-shot performance competitive with task-specific models, which is currently infeasible.
+-   CLIP underperforms in fine-grained classification (e.g., differentiating car models or species of flowers) and abstract tasks (e.g., counting objects).
+-   CLIP struggles with truly out-of-distribution data, such as handwritten digits in MNIST
+-   CLIP’s dataset is unfiltered and can lead to the model learning social biases
 
 
 
