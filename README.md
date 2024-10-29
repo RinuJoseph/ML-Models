@@ -107,11 +107,14 @@ Types of Generative Models:
         </p>
 ## Lecture 14 - Transformers and Attention
 #### Background
-Recurrent neural networks (RNN), long short-term memory (LSTM) and gated recurrent neural networks (GRU) have been the standard for language modeling and machine translation, but they have some limitations:
-Cannot handle very long-term dependencies 
+<ul>
+<li>Recurrent neural networks (RNN), long short-term memory (LSTM) and gated recurrent neural networks (GRU) have been the standard for language modeling and machine translation, but they have some limitations:
+Cannot handle very long-term dependencies </li>
 In Seq-Seq models, decoder only accesses last hidden state. 
 Early information in sentence can be lost. 
 Not parallelizable
-The Transformer model was proposed as a new architecture that eliminates recurrence and relies entirely on attention mechanisms to model global dependencies in sequences.
-This design allows for parallelization during training, leading to significant improvements in computational efficiency and achieving state-of-the-art performance in tasks like machine translation.
+<li>he Transformer model was proposed as a new architecture that eliminates recurrence and relies entirely on attention mechanisms to model global dependencies in sequences.</li>T
+<li>This design allows for parallelization during training, leading to significant improvements in computational efficiency and achieving state-of-the-art performance in tasks like machine translation.</li>
+</ul>
+
 
