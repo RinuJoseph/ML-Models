@@ -132,10 +132,19 @@ Key (K)
 Value (V)
 Each element becomes query, key, and value from the input embeddings matrix X by multiplying by a weight matrix W
  <p align="center">
-        <img width="229" alt="image" src="https://github.com/user-attachments/assets/ef542b01-9d4d-4204-bfd2-c1a022526f8e">
-        <p>Image source: : https://jalammar.github.io/illustrated-transformer</p> 
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/acfbb007-4308-4f0e-b1d5-3edebe04fc77">
+<!--         <p>Image source: : https://jalammar.github.io/illustrated-transformer</p>  -->
 </p>
-![image](https://github.com/user-attachments/assets/ef542b01-9d4d-4204-bfd2-c1a022526f8e)
+
+ <p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/ff8632f7-349d-4419-b3ee-d2ddb8950434">
+        <p>Illustration of Attention mechanism(image source:(https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models)
+</p> 
+</p>
+![image]()
+
+
+
 
 
 
