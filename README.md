@@ -137,7 +137,7 @@ Each element becomes query, key, and value from the input embeddings matrix X by
 </p>
 
  <p align="center">
-        <img width="229" alt="image" width="600px" height="600px" src="https://github.com/user-attachments/assets/ff8632f7-349d-4419-b3ee-d2ddb8950434">
+        <img width="229" alt="image" width="600px" height="400px" src="https://github.com/user-attachments/assets/ff8632f7-349d-4419-b3ee-d2ddb8950434">
         <p>Illustration of Attention mechanism(image source:(https://www.analyticsvidhya.com/blog/2019/06/understanding-transformers-nlp-state-of-the-art-models)
 </p> 
 </p>
