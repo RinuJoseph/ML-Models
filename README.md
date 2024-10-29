@@ -175,7 +175,7 @@ The softMax score is multiplied by value matrix.
 
 #### Multi-Head Attention
 <p align="center">
-        <img width="229" alt="image" src="https://github.com/user-attachments/assets/0dfcd98b-0184-4fe1-bbb0-7b61db4ba71">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/3c07dbef-ef92-470a-b6a1-af9a3556a5d9">
 </p>
 <p align="center">
         <img width="229" alt="image" src="https://github.com/user-attachments/assets/fcc9e66d-4845-4907-a274-24c4baa33223">
