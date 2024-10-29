@@ -251,8 +251,7 @@ ReLU is applied before being put through the second linear transformation, which
         <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/b5b2192f-5e85-4ece-909b-845d88bafedc">
 <!--         <p align="center">Image Source: https://learning.oreilly.com/library/view/build-a-large/9781633437166/OEBPS/Text/chapter-2.html#p248</p> -->
 </p> 
-- hi
-- hello
+
 
 
 
