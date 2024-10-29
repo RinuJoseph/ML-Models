@@ -154,7 +154,9 @@ The decoder looks at the output of the encoder (and the previously generated wor
 <!-- ![image](https://github.com/user-attachments/assets/af98ad84-a5e0-476f-b32a-970b6e052160) -->
 
 #### Scaled Dot Product Attention
-![image](https://github.com/user-attachments/assets/5211a051-0fdc-4288-b03e-cf39d221adce)
+<p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/5211a051-0fdc-4288-b03e-cf39d221adce">
+</p>
 
 In the paper, attention mechanism is described as “Scaled Dot Product Attention” and it can be defined as
 
@@ -170,6 +172,39 @@ Value (V) (dimension dv = 64)
 Dot product of query and key computed and scaled. Scaling is performed by dividing dot product by        which is 8. (the logic behind the scaling: Dot product grows too large in magnitude for large number of dimensions and result in vanishing gradient problems)
 SoftMax is applied to normalize the values between 0 and 1. The result of this step is attention weight matrix.
 The softMax score is multiplied by value matrix.
+
+#### Multi-Head Attention
+<p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/0dfcd98b-0184-4fe1-bbb0-7b61db4ba71">
+</p>
+<p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/fcc9e66d-4845-4907-a274-24c4baa33223">
+</p>
+<!-- ![image]()
+![image]() -->
+<ul>
+   <li>Instead of using a single attention mechanism with dmodel dimension the model linearly projects query, keys and values them h times into lower dimensions dk,dk and dv.
+
+</li>
+   <li>Each projection involves different learned linear transformations for queries, keys, and values. The attention function is performed separately on each of these projected versions (heads) in parallel.
+</li>
+   <li>These outputs are then concatenated and projected again to form the final output.
+</li>
+   <li>Allows the model to attend to information from different subspaces simultaneously.
+</li>
+   <li><Typically, h=8 parallel attention heads are used. Each head has reduced dimensions dk, dv = dmodel /8 = 64 maintaining computational efficiency similar to single-head attention with full dimensions
+/li>
+</ul>
+
+#### Tokenization and Input Embeddings
+<p align="center">
+        <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/8f96285c-1d16-4dbc-bf7c-80322a5ede26">
+        <p align="center">Image Source: https://learning.oreilly.com/library/view/build-a-large/9781633437166/OEBPS/Text/chapter-2.html#p248</p>
+</p> 
+<!-- ![image]() -->
+
+
+
 
 
 
