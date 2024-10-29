@@ -154,6 +154,8 @@ The decoder looks at the output of the encoder (and the previously generated wor
 <!-- ![image](https://github.com/user-attachments/assets/af98ad84-a5e0-476f-b32a-970b6e052160) -->
 
 #### Scaled Dot Product Attention
+![image](https://github.com/user-attachments/assets/5211a051-0fdc-4288-b03e-cf39d221adce)
+
 In the paper, attention mechanism is described as “Scaled Dot Product Attention” and it can be defined as
 
 Input to this method consists of:
