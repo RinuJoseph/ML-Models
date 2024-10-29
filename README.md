@@ -105,4 +105,13 @@ Types of Generative Models:
             <img width="227" alt="image" src="https://github.com/user-attachments/assets/a1737496-ef84-4e5f-ba06-deb6fe9ebc13">
             <p align="center"> Figure 6: Mathematical formulation of reverse diffusion process.</p>
         </p>
+## Lecture 14 - Transformers and Attention
+#### Background
+Recurrent neural networks (RNN), long short-term memory (LSTM) and gated recurrent neural networks (GRU) have been the standard for language modeling and machine translation, but they have some limitations:
+Cannot handle very long-term dependencies 
+In Seq-Seq models, decoder only accesses last hidden state. 
+Early information in sentence can be lost. 
+Not parallelizable
+The Transformer model was proposed as a new architecture that eliminates recurrence and relies entirely on attention mechanisms to model global dependencies in sequences.
+This design allows for parallelization during training, leading to significant improvements in computational efficiency and achieving state-of-the-art performance in tasks like machine translation.
 
