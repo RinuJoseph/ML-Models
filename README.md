@@ -111,19 +111,31 @@ Types of Generative Models:
 <li>Recurrent neural networks (RNN), long short-term memory (LSTM) and gated recurrent neural networks (GRU) have been the standard for language modeling and machine translation, but they have some limitations:</li>
    <ul>
       <li>Cannot handle very long-term dependencies </li>
-<li>In Seq-Seq models, decoder only accesses last hidden state. </li>
-      <li>
-         Early information in sentence can be lost. 
-      </li>
-      <li>
-         Not parallelizable
-      </li>
-
-
+      <li>In Seq-Seq models, decoder only accesses last hidden state. </li>
+      <li>Early information in sentence can be lost. </li>
+      <li>Not parallelizable</li>
    </ul>
-
-<li>he Transformer model was proposed as a new architecture that eliminates recurrence and relies entirely on attention mechanisms to model global dependencies in sequences.</li>T
+<li>he Transformer model was proposed as a new architecture that eliminates recurrence and relies entirely on attention mechanisms to model global dependencies in sequences.</li>
 <li>This design allows for parallelization during training, leading to significant improvements in computational efficiency and achieving state-of-the-art performance in tasks like machine translation.</li>
 </ul>
+
+#### Attention Mechanism
+ <p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/6bc74125-dfe1-440c-a4cf-8d7688e2d960">
+        <p>Image source: : https://jalammar.github.io/illustrated-transformer</p> 
+</p>
+
+Attention is a mechanism used in “Transformer” models allows the position in the input to focus its relevance to different parts of the input sequence when processing each word or token. It helps the model understand which other words in the sentence and generate a representation of the input sequence.
+The mechanism consist of 3 vectors:
+Query (Q)
+Key (K)
+Value (V)
+Each element becomes query, key, and value from the input embeddings matrix X by multiplying by a weight matrix W
+ <p align="center">
+        <img width="229" alt="image" src="https://github.com/user-attachments/assets/ef542b01-9d4d-4204-bfd2-c1a022526f8e">
+        <p>Image source: : https://jalammar.github.io/illustrated-transformer</p> 
+</p>
+![image](https://github.com/user-attachments/assets/ef542b01-9d4d-4204-bfd2-c1a022526f8e)
+
 
 
