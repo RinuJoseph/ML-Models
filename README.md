@@ -251,17 +251,9 @@ ReLU is applied before being put through the second linear transformation, which
         <img width="600" alt="image" height="400px" src="https://github.com/user-attachments/assets/b5b2192f-5e85-4ece-909b-845d88bafedc">
 <!--         <p align="center">Image Source: https://learning.oreilly.com/library/view/build-a-large/9781633437166/OEBPS/Text/chapter-2.html#p248</p> -->
 </p> 
-+ The decoder is comprised of N = 6 identical layers. 
-It has 3 sub-layers
-   1.Masked Multi-Head attention layer
-   2.Multi-Head attention layer
-   3.Feed-forward network layer.
-+ Similar to the encoder, residual connections are employed around each sub-layer in the decoder, followed by layer normalization.
-+ To make sure that the model is auto-regressive, that is, with only previous positions influencing the present position, the first sub-layer is modified with a masking mechanism that prevents each position from attending to future positions (i.e., it only looks at the current and previous tokens)
-+ The output from the final encoder layer is converted to a key and value vector and passed to the decoder.
-**Final Linear and Softmax Layer**
-+ The Linear layer is a simple fully connected neural network that projects the vector produced by the stack of decoders, into a much, much larger vector called a logits vector.
-+ The SoftMax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.
+- hi
+- hello
+
 
 
 
